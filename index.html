@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+
+    <div class="scoreBoard">
+        <div class="score"">
+            <p>Your Score</p>
+            <p class="score" id="yourScore">0</p>
+        </div>
+
+        <div class="score"">
+            <p>AI Score</p>
+            <p class="score" id="aiScore">0</p>
+        </div>
+
+        <div class="score"">
+            <p>Tie Game</p>
+            <p class="score" id="tieGame">0</p>
+        </div>
+    </div>
+
+
+    <div class="controlPanel">
+        <div class="control">
+            <p>Player Symbol</p>
+            <select name="symbolSelector" id="symbolSelector">
+                <option value="1" selected>O</option>
+                <option value="-1">X</option>
+            </select>
+        </div>
+
+        <div class="control">
+            <p>AI Level</p>
+            <select name="levelSelector" id="levelSelector">
+                <option value="1" selected>Easy</option>
+                <option value="3">Medium</option>
+                <option value="5">Hard</option>
+                <option value="7">Unbeatable</option>
+            </select>
+        </div>
+
+        <button id="btnReset">Reset</button>
+    </div>
+
+
+    <div class="board">
+        <div class="line1">
+            <div class="column1" data-placeID="0"></div>
+            <div class="column2" data-placeID="1"></div>
+            <div class="column3" data-placeID="2"></div>
+        </div>
+        <div class="line2">
+            <div class="column1" data-placeID="3"></div>
+            <div class="column2" data-placeID="4"></div>
+            <div class="column3" data-placeID="5"></div>
+        </div>
+        <div class="line3">
+            <div class="column1" data-placeID="6"></div>
+            <div class="column2" data-placeID="7"></div>
+            <div class="column3" data-placeID="8"></div>
+        </div>
+    </div>
+
+    <div class="message">
+        <p>Game Start!</p>
+    </div>
+
+
+    <dialog id="confirmDialog">
+        <p>Click to start another game!</p>
+        <button id="OK">OK</button>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

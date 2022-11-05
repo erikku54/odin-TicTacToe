@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/*---------scoreBoard--------*/
+
+div.scoreBoard{
+
+    margin: 60px auto 0 auto;
+
+    width: 420px;
+    height: 45px;
+
+    display:flex;
+    justify-content: space-between;
+}
+
+p.score{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+
+/*---------controlPanel--------*/
+
+div.controlPanel{
+
+    margin: 40px auto 0 auto;
+
+    width: 330px;
+    height: 45px;
+
+    display:flex;
+    justify-content: space-between;
+}
+
+div.control{
+
+    /* border: 1px solid blue; */
+    flex:0 1 100px;
+
+}
+
+div.control>p{
+
+    color: black;
+}
+
+
+
+div.control>select{
+
+    width: 100px;
+    height: 25px;
+
+    border-radius: 10px;
+
+    /* color:seagreen; */
+    background-color: lightgrey;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+button#btnReset{
+
+    border-radius: 25px;
+
+    background-color: lightgrey;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+
+
+/*----------gameBoard----------*/
+
+div.board{
+
+    margin: 20px auto 20px auto;
+
+    width: 420px;
+    height: 420px;
+
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: aqua;
+}
+
+div.line1,div.line2,div.line3{
+
+    flex: 1;
+    display:flex;
+
+}
+
+div.line1,div.line2{
+
+    border-bottom: 2px solid black;
+}
+
+div.line2, div.line3{
+
+    border-top: 2px solid black;
+}
+
+
+div.column1,div.column2,div.column3{
+
+    flex: 1;
+
+    text-align: center;
+    line-height: 140px;
+
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+div.column1, div.column2{
+
+    border-right: 2px solid black;
+}
+
+div.column2, div.column3{
+
+    border-left: 2px solid black;
+}
+
+/*----------gameMessage----------*/
+
+div.message>p{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/*----------dialog------------*/
+
+dialog#confirmDialog{
+
+    position: absolute;
+
+    width: 280px;
+    height: 90px;
+
+    margin: 30% auto 0 auto;
+
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+
+dialog#confirmDialog>p{
+
+    text-align: center;
+}
+
+dialog#confirmDialog>button{
+
+    display: block;
+
+    width: 40%;
+
+    margin: 10px auto 0 auto;
+    border-radius: 6px;
+}
+
+
+
